@@ -1,0 +1,81 @@
+<!DO lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css"></link>
+    <title>Login</title>
+</head>
+<body>
+    <div class="header">
+        <img class="logoImg" height="60" width="60" src="assets/logo/Logo.png">
+        <div class="title">Learn English with Teacher Paula</div>
+        <div id="menuShowHideBtn" class="menuShowHideBtn l">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#ffffff" viewBox="0 0 256 256">
+                <line id="bar2" x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                <line id="bar1" x1="40" y1="64" x2="216" y2="64" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                <line id="bar3" x1="40" y1="192" x2="216" y2="192" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+            </svg>
+        </div>
+    </div>
+    <div class="menuBtnContainer" id="menuContainer">
+        <button onmouseup="menuBtnUp()" onclick="scrollToFunc('#aboutContainer')" class="menuBtns l"><b>About Us</b></button>
+        <button onmouseup="menuBtnUp()" onclick="scrollToFunc('#videoContainer')" class="menuBtns l"><b>Videos</b></button>
+        <button onmouseup="menuBtnUp()" onclick="scrollToFunc('#galleryContainer')" class="menuBtns l"><b>Gallary</b></button>
+        <button onmouseup="menuBtnUp()" onclick="scrollToFunc('#materialContainer')" class="menuBtns l"><b>Free Material</b></button>
+        <button onmouseup="menuBtnUp()" onclick="scrollToFunc('#contactContainer')" class="menuBtns l"><b>Contact Us</b></button>
+    </div>
+    <!-- bodys -->
+    <div id="loginContainer" class="loginContainer bCont">
+        <img width="100" height="" class="clipart lco" src="assets/images/image.png">
+        <div class="bookNowBtnContainer lco">
+            <button class="bookNowBtn l">Book Now</button>
+        </div>
+        <div class="loginFormContainer lco">
+            <div class="loginForm">
+                <img height="100" width="100" style="margin: 30px 20px 0px 20px" src="assets/logo/Logo.png">
+                <h1 style="color: #585858; margin: 5px;">Login</h1>
+                <div class="adminLoginTxt l" onclick="window.location.href = 'AdminLogin.html'">Admin Login</div>
+                <input style="display: none;" type="text" id="name" placeholder="Full Name*">
+                <input type="text" id="username" placeholder="Email*">
+                <input style="display: none;" type="text" id="email" placeholder="someone@example.com*">
+                <div style="display: none;" class="phone-input" id="phone-input">
+                    <input id="c-code" class="country-code" type="tel" maxlength="4" value="+63" bind:value="cc">
+                    <input id="phone" class="phone" type="tel" placeholder="987 654 3210*" maxlength="10">
+                </div>
+                <input type="password" id="password" placeholder="Password*">
+                <label id="errorMsg" style="visibility: hidden; margin-left: 10px; width: 100%; font-size: smaller; color: red;">Please fill all the mandatory fields.</label>
+                <button id="login-signup-button" class="login-button l" type="submit">Login</button>
+                <span id="signUpBtn" class="signUpTxt l" onclick="showSignUp()">Don't have an account?</span>
+                <span id="forgot-password-text" class="forgotPassTxt l">Forgot password?</span>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="galleryContainer" class="galleryContainer bCont">
+        <div class="galleryImageContainer">
+            <img class="galleryImage" src="assets/images/image1.png" width="90%">
+        </div>
+        <div class="galleryImageQuote">
+            <p>
+                "Learning a new language is not only expanding your knowledge but more of building connections with people across the world through communication"
+                <br><br>-T. Mignon
+            </p>
+        </div>
+    </div>
+
+    <div id="videoContainer" class="videoContainer bCont">
+    </div>
+
+    <div id="materialContainer" class="materialContainer bCont">
+    </div>
+
+    <div id="aboutContainer" class="aboutContainer bCont">
+    </div>
+
+    <div id="contactContainer" class="contactContainer">>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</bo>
